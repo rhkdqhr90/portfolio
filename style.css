@@ -1,0 +1,39 @@
+:root {
+    --font-samll: 8px;
+    --font-middle: 16px;
+    --font-large: 32px;
+
+    --color-white:#ffffff
+}
+
+
+button{
+    background: inherit ; border:none; box-shadow:none;  cursor:pointer;
+    padding: 0;
+}
+
+
+nav{
+    background-color:burlywood;
+    color:var(--color-white);
+    
+}
+
+.title{
+    font-size: var(--font-large);
+}
+
+
+
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_introduce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
