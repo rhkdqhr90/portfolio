@@ -12,28 +12,3 @@ button{
     padding: 0;
 }
 
-
-nav{
-    background-color:burlywood;
-    color:var(--color-white);
-    
-}
-
-.title{
-    font-size: var(--font-large);
-}
-
-
-
-.nav_bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav_introduce{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
