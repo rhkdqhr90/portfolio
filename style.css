@@ -116,14 +116,14 @@ p{
     margin: 0 4px;
     cursor: pointer;
     border-radius: var(--size-border-radius);
+    border: 1px solid transparent;
 }
-.nav_menu_item.active{
-    border: 1px solid var(--color-white);
-    
-}
+
 
 .nav_menu_item:hover{
     background-color: var(--color-dark-pink);
+    border: 1px solid var(--color-white);
+    
     
 }
 
@@ -310,12 +310,12 @@ p{
     padding: 8px 48px;
 }
 
-.category_btn.active,
+.category_btn.selected,
 .category_btn:hover{
     background-color: var(--color-pink);
     color: var(--color-white);
 }
-.category_btn.active .category_count,
+.category_btn.selected .category_count,
 .category_btn:hover .category_count{
     opacity: 1;
     top:0;
@@ -340,10 +340,15 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    opacity: 1;
+    transition: all 300ms ease-out;
 
 }
 
+.work__projects.ainim-out{
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
+}
 .project{
     position: relative;
     width: 450px; 
@@ -353,6 +358,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;   
+}
+.project.invisibe{
+    display: none;
 }
 .project__img{
     max-width: 100%;
@@ -381,7 +389,7 @@ p{
 }
 
 .project__description h3{
-    color:var(--color-white);
+    color:var(--color-orange);
 }
 
 .project__description h3:after{
@@ -389,10 +397,10 @@ p{
     display: block;
     position: relative;
     left:50%;
-    width: 25px;
+    width: 50px;
     height: 2px;
     background-color: var(--color-dark-white);
-    margin-left: -12px;
+    transform: translateX(-50%);
     margin-top: 8px;
     
 }
@@ -488,15 +496,20 @@ p{
     .navbar__toggle-btn{
         display: block;
     }
-    #nav__bar{
+    #navbar{
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-blue);
     }
     .nav__menu{
         flex-direction: column;
         text-align: center;
         width: 100%;
         display: none;
+    }
+    .nav__menu.open{
+        display: block;
+       
     }
     .about__majors{
         flex-direction: column;
