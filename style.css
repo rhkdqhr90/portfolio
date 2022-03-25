@@ -297,7 +297,7 @@ p{
 }
 
 .skill_value{
-    width: 100%;
+    width: 80%;
     height: 3px;
     background-color:var(--color-orange);
 }
