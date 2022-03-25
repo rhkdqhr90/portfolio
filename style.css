@@ -156,7 +156,7 @@ p{
 }
 .home__title,
 .home__description{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 .home__contact{
     font-size: var(--font-regular);
@@ -297,7 +297,7 @@ p{
 }
 
 .skill_value{
-    width: 80%;
+    width: 99%;
     height: 3px;
     background-color:var(--color-orange);
 }
