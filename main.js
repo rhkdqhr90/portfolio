@@ -82,7 +82,8 @@ workBtn.addEventListener("click", (event) => {
   workProject.classList.add("ainim-out");
   setTimeout(() => {
     projects.forEach((project) => {
-      if (filter === "*" || filter === project.dataset.type) {
+      const types = project.dataset.type.split(" ");
+      if (filter === "*" || types.includes(filter)) {
         project.classList.remove("invisibe");
       } else {
         project.classList.add("invisibe");
