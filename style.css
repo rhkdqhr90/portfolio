@@ -443,11 +443,18 @@ p {
 #contact {
   background-color: var(--color-pink);
 }
-
+.contact__links {  
+  justify-content: center;
+  align-items: center;
+}
 .contact__title,
 .contact__email,
+.contact__github,
+.contact__linkedin,
 .contact__rights {
   color: var(--color-white);
+  margin-bottom: 10px;
+  display: block;
 }
 
 .contact__title {
